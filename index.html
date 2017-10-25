@@ -44,7 +44,7 @@
 
 <script>
   d3.csv("presidents.csv", function (error, data) {
-    var presidents = new dex.csv(data).include([2, 3, 0, 1]);
+    var presidents = new dex.csv(data).include([0,1,2]);
     dex.console.log("P", presidents);
     $(document).ready(function () {
       $('body').layout({
